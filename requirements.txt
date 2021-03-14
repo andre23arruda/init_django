@@ -1,0 +1,2 @@
+# put here installed packages (remove this line)
+Django==3.1.4
