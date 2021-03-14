@@ -34,9 +34,15 @@ class ObjectsView(ListView):
     model = Book
     template_name = 'app_example/list_objects.html'
 
+    def get_queryset(self):
+        queryset = super(ObjectsView, self).get_queryset()
+        queryset = queryset.filter(id__gte=2) # show only id > 2
+        return queryset
+
     def get_context_data(self, **kwargs):
         context = super(ObjectsView, self).get_context_data(**kwargs)
         context['page_title'] = 'Objects'
+        ## a test to send message in any view
         # context['messages'] = [
         #     {
         #         'text': 'This is just some data',
@@ -48,7 +54,8 @@ class ObjectsView(ListView):
 
 class ObjectCreateView(SuccessMessageMixin, CreateView):
     model = Book
-    fields = ['title', 'author']
+    # fields = ['title', 'genre', 'author']
+    form_class = BookForms
     template_name = 'app_example/create_object.html'
     success_url = 'objects'
     success_message = 'Object created with success'

@@ -9,10 +9,10 @@ os.environ['TIME_ZONE'] = 'America/Sao_Paulo'
 os.environ['AUTHOR'] = 'your name or email'
 
 # aws keys
+os.environ['USE_S3'] = '' # if '' is False, else is True
 os.environ['AWS_ACCESS_KEY_ID'] = f'*******'
 os.environ['AWS_SECRET_ACCESS_KEY'] = '*******'
 os.environ['AWS_STORAGE_BUCKET_NAME'] = 'your bucket name'
-os.environ['USE_S3'] = '' # if '' is False, else is True
 
 # aws parameters to save files
 os.environ['AWS_STATIC_LOCATION'] = 'static'
