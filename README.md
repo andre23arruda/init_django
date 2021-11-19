@@ -10,7 +10,7 @@
 - Model
 - Serializer
 - Forms
-- Templates
+- Templates with Bootstrap
 - Admin Dark Mode
 - Views (classes and functions)
 - API views (DRF)
@@ -24,6 +24,9 @@ git clone https://github.com/andre23arruda/drf-init
 
 # Entrar na pasta
 cd drf-init
+
+# Renomear env_example.py para env.py
+cp setup/env_example.py setup/env.py
 
 # Criar um ambiente virtual
 python -m venv venv

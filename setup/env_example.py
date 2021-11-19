@@ -1,11 +1,11 @@
 import os
 
 os.environ['SECRET_KEY'] = 'your project secret key'
-os.environ['DEBUG'] = '1' # if '' is False, else is True
+os.environ['DEBUG'] = '1' # Empty string is False, else is True
 os.environ['ALLOWED_HOSTS'] = f'["127.0.0.1", "localhost"]'
 
 ## DATABASE
-os.environ['USE_SQLITE'] = 'true' # if '' is False, else is True
+os.environ['USE_SQLITE'] = 'true' # Empty string is False, else is True
 ## djongo
 os.environ['DATABASES'] = '''{
     'default': {
@@ -31,7 +31,7 @@ os.environ['TIME_ZONE'] = 'America/Sao_Paulo'
 os.environ['AUTHOR'] = 'your name or email'
 
 # aws keys
-os.environ['USE_S3'] = '' # if '' is False, else is True
+os.environ['USE_S3'] = '' # Empty string is False, else is True
 os.environ['AWS_ACCESS_KEY_ID'] = f'*******'
 os.environ['AWS_SECRET_ACCESS_KEY'] = '*******'
 os.environ['AWS_STORAGE_BUCKET_NAME'] = 'your bucket name'
