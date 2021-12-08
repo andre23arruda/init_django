@@ -20,10 +20,10 @@
 ### Run
 ```sh
 # clonar repositório
-git clone https://github.com/andre23arruda/drf-init
+git clone https://github.com/andre23arruda/init_django
 
 # Entrar na pasta
-cd drf-init
+cd init_django
 
 # Renomear env_example.py para env.py
 cp setup/env_example.py setup/env.py
