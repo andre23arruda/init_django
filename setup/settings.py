@@ -25,6 +25,7 @@ INSTALLED_APPS = [
     'corsheaders',
     # my apps
     'app_example',
+    'stock_prices',
 ]
 
 MIDDLEWARE = [
