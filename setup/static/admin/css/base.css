@@ -1013,6 +1013,7 @@ table#change-history tbody th {
     font-size: 25px !important;
     width: auto !important;
     top: auto !important;
+    margin-top: 30px;
 }
 
 .toggle-nav-sidebar:hover {
@@ -1022,6 +1023,7 @@ table#change-history tbody th {
 
 #nav-sidebar {
     left: auto !important;
+    transition: none;
 }
 
 #content-related {
